@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anggota - DESTHA 906</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css">
+  <link rel="icon" href="icon/DESTHA906.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="icon/DESTHA906.png" alt="Logo DESTHA 906">
+        <span class="org-name">DESTHA 906</span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index-new.html" class="nav-link">Beranda</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="members.html" class="nav-link active">Anggota</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Section -->
+    <section class="section" style="background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: white; padding: 3rem 0;">
+      <div class="container">
+        <h1 style="margin: 0 0 0.5rem 0; font-size: 2.5rem;">Anggota Kami</h1>
+        <p style="margin: 0; color: rgba(245, 241, 232, 0.9);">Komunitas kami terdiri dari pecinta alam dari berbagai latar belakang</p>
+      </div>
+    </section>
+
+    <!-- Members Grid -->
+    <section class="section">
+      <div class="container">
+        <h2 style="margin-top: 0;">Daftar Lengkap Anggota</h2>
+        
+        <!-- Filter/Category (Optional) -->
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;" id="filterContainer"></div>
+        
+        <!-- Members Grid -->
+        <div class="members-grid" id="membersGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Pecinta Alam DESTHA 906</strong>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/official.destha906" target="_blank" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/official.destha906" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://www.youtube.com/@officialdestha9063" target="_blank" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> DESTHA 906 — Semua hak dilindungi
+    </div>
+  </footer>
+
+  <script src="script-new.js" defer></script>
+</body>
+</html>

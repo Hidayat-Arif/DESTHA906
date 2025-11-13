@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DESTHA 906</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/svg+xml">
+  <link rel="icon" href="DESTHA906.png" sizes="32x32">
+  <link rel="shortcut icon" href="PA.png">
+  <meta name="theme-color" content="#00AEEF"> <!-- Diubah ke biru -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- simple leaf logo (tetap hijau daun, tapi bisa diubah jika mau) -->
+       <img src="DESTHA906.png" alt="Logo DESTHA 906" width="44" height="44">
+        <span class="org-name">DESTHA 906</span>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#home" data-route="home" class="nav-link active">Beranda</a></li>
+          <li><a href="#dashboard" data-route="dashboard" class="nav-link">Dashboard</a></li>
+          <li><a href="#members" data-route="members" class="nav-link">Anggota</a></li>
+          <li><a href="#about" data-route="about" class="nav-link">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+  <section id="home" class="section hero">
+      <div class="hero-overlay" id="heroOverlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Jelajahi Alam. Lindungi Warisan Kita.</h1>
+        <p class="hero-sub">Komunitas pendaki dan pecinta alam yang peduli konservasi, pendidikan lapang, dan petualangan yang bertanggung jawab.</p>
+        <div class="hero-cta">
+          <button class="btn primary" id="exploreBtn">Jelajahi Alam Bersama Kami</button>
+          <a href="#about" class="btn ghost">Pelajari Lebih</a>
+        </div>
+        <!-- Members preview (populated by JS) -->
+        <div class="members-preview" id="membersPreview" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Dashboard (SPA section) -->
+  <section id="dashboard" class="section content-section">
+      <div class="container">
+        <h2>Dashboard</h2>
+        <div class="stats-grid">
+          <div class="stat card">
+            <h3 id="statMembers">--</h3>
+            <p>Jumlah Anggota</p>
+          </div>
+          <div class="stat card">
+            <h3 id="statHikes">--</h3>
+            <p>Jumlah Pendakian</p>
+          </div>
+          <div class="card upcoming">
+            <h3>Jadwal Kegiatan Mendatang</h3>
+            <div id="eventsList" class="events-list">
+              <!-- cards injected by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Members -->
+  <section id="members" class="section content-section">
+      <div class="container">
+        <h2>Anggota Kami</h2>
+        <p class="muted">Komunitas kami terdiri dari pecinta alam dari berbagai latar belakang.</p>
+        <div class="members-grid" id="membersGrid">
+          <!-- member cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+  <section id="about" class="section content-section">
+      <div class="container about-wrap">
+        <h2>Tentang Organisasi</h2>
+        <p class="lead">Pecinta Alam DESTHA906 adalah komunitas yang berdedikasi pada konservasi alam, edukasi lapang, dan petualangan bertanggung jawab.</p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Visi</h3>
+            <p>Menjadi gerakan pemuda yang menjaga dan merawat kekayaan alam Indonesia untuk generasi mendatang.</p>
+          </div>
+          <div class="about-card">
+            <h3>Misi</h3>
+            <ul>
+              <li>Meningkatkan kepedulian lingkungan melalui kegiatan lapang.</li>
+              <li>Mengadakan pelatihan keselamatan pendakian dan konservasi.</li>
+              <li>Berkolaborasi dengan komunitas lokal untuk proyek restorasi habitat.</li>
+            </ul>
+          </div>
+          <div class="about-card animated-text" id="animatedText">
+            <h3>Kegiatan Utama</h3>
+            <p id="activityText">--</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Pecinta Alam DESTHA906</strong>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/official.destha906?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/official.destha906" aria-label="Facebook">Facebook</a>
+        <a href="https://www.youtube.com/@officialdestha9063" aria-label="Youtube">Youtube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> DESTHA906 — Semua hak dilindungi</div>
+  </footer>
+<script src="script.js" defer></script>
+  
+</body>
+</html>

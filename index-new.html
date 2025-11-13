@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DESTHA 906 - Pecinta Alam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css">
+  <link rel="icon" href="icon/DESTHA906.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="icon/DESTHA906.png" alt="Logo DESTHA 906">
+        <span class="org-name">DESTHA 906</span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index-new.html" class="nav-link active">Beranda</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="members.html" class="nav-link">Anggota</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Jelajahi Alam. Lindungi Warisan Kita.</h1>
+          <p>Komunitas pendaki dan pecinta alam yang peduli konservasi, pendidikan lapang, dan petualangan yang bertanggung jawab.</p>
+          <div>
+            <a href="dashboard.html" class="btn btn-primary">Jelajahi Alam Bersama Kami</a>
+            <a href="about.html" class="btn btn-secondary" style="margin-left: 1rem; background: var(--secondary); color: white; border: none;">Pelajari Lebih</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="carousel">
+            <div class="carousel-container">
+              <img src="baground/baground.JPG" alt="Alam DESTHA" class="carousel-img active">
+              <img src="baground/bg2.jpg" alt="Alam DESTHA 2" class="carousel-img">
+              <img src="baground/bg3.jpg" alt="Alam DESTHA 3" class="carousel-img">
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev" id="prevBtn">❮</button>
+              <button class="carousel-btn next" id="nextBtn">❯</button>
+            </div>
+            <div class="carousel-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="statMembers">--</div>
+            <div class="stat-label">Jumlah Anggota</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statHikes">--</div>
+            <div class="stat-label">Jumlah Pendakian</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Gunung Ditaklukkan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Members Preview -->
+    <section class="section" style="background: #1a1a1a; padding: 4rem 0;">
+      <div class="container">
+        <h2>Pengurus Organisasi</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Bertemu dengan pemimpin kami yang berdedikasi</p>
+        <div id="membersPreview" class="members-grid" style="max-width: 600px;"></div>
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="members.html" class="btn" style="background: var(--accent); color: var(--primary); border: 2px solid var(--accent); font-weight: 700;">Lihat Semua Anggota</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Pecinta Alam DESTHA 906</strong>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/official.destha906" target="_blank" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/official.destha906" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://www.youtube.com/@officialdestha9063" target="_blank" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> DESTHA 906 — Semua hak dilindungi
+    </div>
+  </footer>
+
+  <script src="script-new.js" defer></script>
+</body>
+</html>
